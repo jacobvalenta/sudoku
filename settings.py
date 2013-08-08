@@ -1,7 +1,7 @@
 # Django settings for sudoku project.
 
 import os
-from os.path import join, abspath, dirnam
+from os.path import join, abspath, dirname
 _dir = lambda *x: join(abspath(dirname(__file__) + "../../.."), *x)
 
 DEBUG = True
