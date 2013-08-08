@@ -125,6 +125,10 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
+    'south',
+    
+    'sudoku.puzzels',
+    
     'django.contrib.admin',
 )
 
