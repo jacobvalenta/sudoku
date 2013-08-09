@@ -9,5 +9,5 @@ DIFFICULTY_TYPES = (
 )
 
 class Puzzel(models.Model):
-    puzzel = MatrixField(datatype='int', dimensions=(9,9))
+    grid = MatrixField(datatype='int', dimensions=(9,9))
     difficulty = models.CharField(max_length=1, choices=DIFFICULTY_TYPES)
