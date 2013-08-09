@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sudoku</title>		
+		{% block css %}
+			<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300|Roboto:400,300,700' rel='stylesheet' type='text/css'>
+			<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/main.css" />
+		{% endblock %}
+		{% block javascript %}
+		 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+			<script type="text/javascript" src="{{ STATIC_URL }}js/engine.js"></script>
+		{% endblock %}
+	</head>
+	<body>
+		{% block content %}
+		{% endblock content %}
+	</body>
+</html>
