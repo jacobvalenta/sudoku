@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div class="registration">
+		<form action='?next={{ next }}' method='post'>
+			{% csrf_token %}
+			<h3>Register for Sudoku</h3>
+			<input id="id_username" maxlength="30" name="username" placeholder="{{ form.username.label }}" type="text" />
+			<input id="id_email" name="email" placeholder="{{ form.email.label }}" type="text" />
+			<input id="id_password1" name="password1" placeholder="{{ form.password1.label }}" type="password" />
+			<input id="id_password2" name="password2" placeholder="{{ form.password2.label }}" type="password" /><br />
+			<input type="submit" value="register">
+		</form>
+	</div>
+{% endblock %}
