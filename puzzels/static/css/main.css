@@ -56,6 +56,63 @@ h3{
 	font-weight: 700;
 }
 
+.puzzel{
+	margin: 0px auto;
+	width: 369px;
+	height: 372px;
+	border: 3px solid #666;
+}
+.row{
+	display: block;
+	height: 40px;
+	border-bottom: 1px solid #777;
+}
+.number{
+	float: left;
+	border-right: 1px solid #777;
+	box-sizing: border-box;
+	font-weight: 500;
+	font-size: 32px;
+	padding: 5px;
+	width: 40px;
+	height: 40px;
+	text-align: center;	
+	color: #246BB2;
+}
+.row:nth-child(1) .number{
+	border-top: none;
+}
+.row:nth-child(3){
+	border-bottom: 3px solid #777;
+}
+.row:nth-child(6){
+	border-bottom: 3px solid #777;
+}
+.row:nth-child(9){
+	border-bottom: none;
+}
+.row:nth-child(9) .number{
+	border-bottom: none;
+}
+.row .number:nth-child(1){
+	border-left: none;
+}
+.row .number:nth-child(9){
+	border-right: none;
+}
+.row .number:nth-child(3){
+	width: 43px;
+	border-right: 3px solid #777;
+}
+.row .number:nth-child(6){
+	width: 43px;
+	border-right: 3px solid #777;
+}
+.fixed{
+	font-weight: 700;
+	color: #000;
+}
+
 .timer{
 	text-align: center;
 	font-size: 72px;

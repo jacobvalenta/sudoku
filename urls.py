@@ -1,12 +1,16 @@
 from django.conf.urls import patterns, include, url
+from django.core.urlresolvers import reverse_lazy
 
 from django.contrib import admin
 admin.autodiscover()
 
-from sudoku.puzzels.views import HomeView
+from sudoku.puzzels.views import HomeView, PuzzelListView, PuzzelView
+from .views import RegistrationView
 
 urlpatterns = patterns('',
     url(r'^$', HomeView.as_view(), name='home'),
+    url(r'^puzzels$', PuzzelListView.as_view(), name="list"),
+    url(r'^(?P<puzzel_id>\d+)', PuzzelView.as_view(), name="puzzel"),
     # url(r'^sudoku/', include('sudoku.foo.urls')),
 
     # Auth

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div class="puzzel-list">
+		{% for puzzel in object_list %}
+			<div class="puzzel-list-tile">
+				<span>{{ puzzel.id }}</span>
+			</div>
+		{% endfor %}
+	</div>
+{% endblock %}

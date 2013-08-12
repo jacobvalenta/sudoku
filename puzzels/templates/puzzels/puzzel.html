@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<br />
+	<h3>Puzzel #{{ object.id }}</h3>
+	<br />
+	<div class="puzzel">
+		{% for row in grid %}
+			<div class="row">
+				{% for number in row %}
+				<div class="number fixed" contenteditable>{{ number }}</div>
+				{% endfor %}
+			</div>
+		{% endfor %}
+	</div>
+	<br />
+	<div class="timer">0:00</div>
+{% endblock %}
