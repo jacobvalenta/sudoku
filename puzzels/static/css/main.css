@@ -20,6 +20,41 @@ h3{
 	font-size: 28px;
 	text-shadow: 0px 1px 2px #bbb;
 }
+.registration{
+	margin-left: auto;
+	margin-right: auto;
+	padding: 50px;
+	width: 300px;
+}
+.registration input{
+	margin: 8px;
+	box-sizing: border-box;
+	padding: 7px;
+	font-size: 17px;
+	width: 100%;
+}
+.registration input[type="submit"]{
+	box-sizing: content-box;
+	font-family: 'Josefin Sans', sans-serif;
+	width: auto;
+}
+.puzzel-list{
+	margin: 0 auto;
+	width: 300px;
+	border: 1px solid #ddd;
+}
+.puzzel-list-tile{
+	box-sizing: border-box;
+	padding: 5px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+}
+.puzzel-list-tile span{
+	display: inline-block;
+	font-size: 23px;
+	font-weight: 700;
+}
 
 .timer{
 	text-align: center;
