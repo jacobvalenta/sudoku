@@ -20,3 +20,10 @@ h3{
 	font-size: 28px;
 	text-shadow: 0px 1px 2px #bbb;
 }
+
+.timer{
+	text-align: center;
+	font-size: 72px;
+	color: #aaa;
+	font-weight: 100;
+}
